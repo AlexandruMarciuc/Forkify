@@ -1,0 +1,694 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(186, 224, 222);
+  color: rgb(84, 101, 101);
+}
+
+/*header////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1158.5px;
+  padding: 15px;
+  background-color: rgb(148, 211, 207);
+  height: 70px;
+  border-radius: 25px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: rgb(84, 101, 101);
+}
+
+.container {
+  position: relative;
+  width: 1188px;
+  height: 1285px;
+  text-align: center;
+  border: 2px solid #fefefe;
+  margin-left: 155px;
+  margin-top: 55px;
+  border-radius: 25px;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+}
+
+.searchField {
+  position: relative;
+  width: 400px;
+  height: 60px;
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+  border: none;
+  font-size: 1.1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  outline: none;
+}
+
+.searchIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.btnSearch {
+  position: relative;
+  width: 80px;
+  height: 62px;
+  border-radius: 0% 50% 50% 0%;
+  left: -0px;
+  background-color: white;
+  border: solid white 2px;
+  color: rgb(84, 101, 101);
+  cursor: pointer;
+}
+
+.bookmarks {
+  position: relative;
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 160px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgb(148, 211, 207);
+  border: none;
+  color: rgb(84, 101, 101);
+  cursor: pointer;
+}
+
+.addRecipe {
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 160px;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(148, 211, 207);
+  color: rgb(84, 101, 101);
+  cursor: pointer;
+}
+
+button img {
+  width: 25px;
+  height: 25px;
+}
+
+.addRecipe span {
+  position: relative;
+  top: -5px;
+}
+
+.bookmarks span {
+  position: relative;
+  top: -5px;
+}
+
+.cutleryImg {
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+.logo {
+  position: relative;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo .span {
+  position: relative;
+  top: -12px;
+  font-size: 2rem;
+}
+
+.container .bookmarks:hover,
+.addRecipe:hover {
+  transition: background-color 0.4s ease;
+  font-size: 1.3rem;
+}
+
+.container .btnSearch:hover {
+  .searchIcon {
+    transition: width 0.1s ease;
+    transition: height 0.1s ease;
+    width: 35px;
+    height: 35px;
+  }
+  transition: background-color 0.8s ease;
+  background-color: rgb(148, 211, 207);
+}
+
+/*preview List///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.searchResults {
+  border: rgb(216, 239, 238) solid 2px;
+  width: 410px;
+  height: 1181.5px;
+  border-radius: 25px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  background-color: rgb(216, 239, 238);
+}
+
+.results {
+  position: relative;
+
+  width: 367px;
+  height: 1100px;
+  left: 0px;
+  top: 0px;
+}
+
+.previewList {
+  cursor: pointer;
+  position: relative;
+
+  width: 409px;
+  height: 83px;
+  left: -41px;
+  top: 5px;
+}
+
+.previewTitle {
+  position: relative;
+  width: 250px;
+  left: -6px;
+  text-align: left;
+}
+
+.previewPublisher {
+  position: relative;
+  width: 250px;
+  left: -6px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.previewImg {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  border-radius: 50px;
+  left: -160px;
+  top: 0px;
+}
+
+.previewList {
+  list-style-type: none;
+  border: rgb(216, 239, 238) solid 2px;
+}
+
+.previewData {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 150px;
+  left: 95px;
+  top: -70px;
+  font-size: 1.1rem;
+}
+
+.previewTitle,
+.previewPublisher {
+  display: block;
+}
+
+.previewTitle,
+.previewPublisher {
+  pointer-events: none;
+}
+
+.results :hover {
+  transition: background-color 0.4s ease;
+  background-color: rgb(186, 224, 222);
+}
+
+.activePreviewList {
+  background-color: rgb(186, 224, 222);
+}
+
+.activePreviewListBookmarks {
+  background-color: rgb(186, 224, 222);
+}
+
+.previewLink {
+  text-decoration: none;
+  color: rgb(67, 67, 67);
+}
+/*Page Buttons///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.rightArrow {
+  width: 20px;
+  height: 20px;
+}
+
+.leftArrow {
+  width: 20px;
+  height: 20px;
+}
+
+.previousPage {
+  position: relative;
+  cursor: pointer;
+  background-color: rgb(148, 211, 207);
+  height: 40px;
+  width: 95px;
+  position: relative;
+  border-radius: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  border: none;
+  top: -40px;
+  left: -50px;
+  cursor: pointer;
+}
+
+.previousText {
+  position: relative;
+  top: -5px;
+}
+
+.nextPage {
+  position: relative;
+  cursor: pointer;
+  background-color: rgb(148, 211, 207);
+  height: 40px;
+  width: 95px;
+  position: relative;
+  border-radius: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  border: none;
+  top: -40px;
+  left: 40px;
+  cursor: pointer;
+}
+
+.nextText {
+  position: relative;
+  top: -5px;
+}
+
+.previousPage:hover {
+  background-color: rgb(113, 210, 204);
+}
+
+.nextPage:hover {
+  background-color: rgb(113, 210, 204);
+}
+
+/*Recipe///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.recipe {
+  width: 775px;
+  height: 1181.5px;
+  position: relative;
+  top: -1184px;
+  left: 413px;
+}
+
+.recipe-details-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 773.5px;
+  height: 71px;
+  top: -51.1px;
+  background-color: rgb(219, 252, 250);
+  border: solid rgb(219, 252, 250) 1px;
+}
+
+.recipe-details {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 540px;
+  left: 100px;
+  border: solid rgb(219, 252, 250) 1px;
+  background-color: rgb(219, 252, 250);
+}
+
+.increase-servings img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+
+  cursor: pointer;
+}
+
+.recipe-cooking-time {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 127px;
+  font-size: 1.2rem;
+}
+
+.recipe-cooking-time img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.recipe-servings-number {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 123px;
+  font-size: 1.2rem;
+}
+
+.recipe-servings-number img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.recipe-servings-number-edit {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95px;
+  font-size: 1.2rem;
+}
+
+.btn-decrease-servings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgb(219, 252, 250);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-decrease-servings {
+  width: 35px;
+  height: 35px;
+}
+
+.btn-increase-servings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: rgb(219, 252, 250);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-increase-servings {
+  width: 35px;
+  height: 35px;
+}
+
+.btn-decrease-servings img {
+  width: 35px;
+  height: 35px;
+}
+
+.btn-increase-servings img {
+  width: 32.5px;
+  height: 32.5px;
+}
+
+.btn-bookmark-round {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 50px;
+  background-color: rgb(148, 211, 207);
+  border: none;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: relative;
+  top: -35px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.recipe__img {
+  position: relative;
+  width: 774px;
+  height: 350px;
+  left: -40px;
+  top: -16px;
+}
+
+.recipe__title {
+  position: relative;
+  font-size: 1.5rem;
+  width: 775px;
+  top: -35px;
+  left: -40px;
+  color: rgb(67, 67, 67);
+  background-color: rgb(219, 252, 250);
+}
+
+/*////////////////////////////////////////////////////////////*/
+
+.recipe__ingredient-ul {
+  position: relative;
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the container */
+  flex-wrap: wrap;
+  width: 733px;
+  top: -75px;
+  left: 2px;
+}
+
+.recipe__ingredient {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+.recipe__ingredient img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.heading--2 {
+  position: relative;
+  top: -70px; /* adjust this value as needed */
+}
+
+.recipe__directions {
+  height: 100px;
+  position: relative;
+  top: -25px;
+}
+
+.btn-directions {
+  position: relative;
+  top: -40px;
+  width: 100px;
+  height: 35px;
+  background-color: rgb(113, 210, 204);
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.btn-directions span {
+  position: relative;
+  width: 750px;
+  line-height: 1.8;
+}
+
+.recipe__directions-text {
+  position: relative;
+  top: -45px;
+}
+
+.addBookmark:hover {
+  background-color: rgb(113, 210, 204);
+}
+
+.spinner {
+  position: relative;
+  margin: 5rem auto;
+  text-align: center;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.spinner img {
+  height: 5rem;
+  width: 5rem;
+  animation: rotate 2s infinite linear;
+  pointer-events: none;
+}
+
+.spinner:hover {
+  background-color: rgb(216, 239, 238);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*Recipe ingredients///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.heading--3 {
+  position: relative;
+  top: -40px;
+  border-top: solid rgb(216, 239, 238) 3px;
+}
+
+.heading {
+  position: absolute;
+  top: 455px;
+  left: 250px;
+  width: 300px;
+  color: rgb(61, 61, 61);
+}
+
+.directionsButton {
+  position: relative;
+  width: 100px;
+  height: 35px;
+  background-color: rgb(113, 210, 204);
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.directionText {
+  position: relative;
+  width: 750px;
+  line-height: 1.5;
+}
+
+.buttonText {
+  position: relative;
+  top: 7px;
+}
+
+.heading2 {
+  position: relative;
+  color: rgb(61, 61, 61);
+}
+
+.recipeSite {
+  position: relative;
+  margin-top: 50px;
+  left: -7px;
+  border-top: solid rgb(216, 239, 238);
+}
+
+/*bookmark List///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.bookmarkList {
+  cursor: pointer;
+  position: absolute;
+  width: 400px;
+  height: 83px;
+  left: 943.5px;
+  top: 157px;
+  display: none;
+}
+
+.bookmarkResults {
+  list-style-type: none;
+  width: 409px;
+  height: 83px;
+  font-size: 0; /* Set font size to 0 to eliminate any residual space and make the list elements gapless */
+}
+
+.bookmarkPreviewList {
+  position: relative;
+  width: 400px;
+  height: 83px;
+  left: -39px;
+  background-color: rgb(216, 239, 238);
+}
+
+.bookmarkPreviewTitle {
+  position: relative;
+  width: 250px;
+  left: -6px;
+  top: -5px;
+  text-align: left;
+}
+
+.bookmarkPreviewPublisher {
+  position: relative;
+  width: 409px;
+  top: -5px;
+  left: -6px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.bookmarkPreviewImg {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  border-radius: 50px;
+  left: -25px;
+  top: 10px;
+}
+
+.bookmarkPreviewData {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 150px;
+  left: 95px;
+  top: -40px;
+  font-size: 1.1rem;
+}
+
+.bookmarkPreviewTitle,
+.bookmarkPreviewPublisher {
+  display: block;
+}
+
+.bookmarkPreviewTitle,
+.bookmarkPreviewPublisher {
+  pointer-events: none;
+}
+
+.bookmarkResults :hover {
+  transition: background-color 0.4s ease;
+  background-color: rgb(186, 224, 222);
+}
